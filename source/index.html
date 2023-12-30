@@ -18,11 +18,9 @@
     <div class="main-header__inner container">
       <a class="main-header__logo" href="#">
         <picture>
-          <img class="main-header__logo-image" src="images/logo/logo-catenergy-mobile.svg" width="33" height="38"
-            alt="Логотип Кэт энерджи">
+          <img class="main-header__logo-image" src="images/logo/logo-catenergy-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
         </picture>
-        <img class="main-header__logo-text" src="images/logo/logo-catenergy-text-mobile.svg" alt="Текст логотипа"
-          width="101" height="18">
+        <img class="main-header__logo-text" src="images/logo/logo-catenergy-text-mobile.svg" alt="Текст логотипа" width="101" height="18">
       </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle main-nav__toggle--closed button" type="button">
@@ -89,7 +87,7 @@
           <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
             Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__link link" href="catalog.html">каталог pro</a>
+          <a  class="programs__link link" href="catalog.html">каталог pro</a>
         </li>
       </ul>
     </section>
@@ -152,30 +150,25 @@
         </div>
         <div class="example__slider-cat slider-cat">
           <div class="slider-cat__inner">
-            <div class="slider-cat__image slider-cat__image--before">
-              <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)"
-                  srcset="images/slider/cat-tablet-before@1x.png 1x, images/slider/cat-tablet-before@2x.png 2x">
-                <img src="images/slider/cat-mobile-before@1x.png" srcset="images/slider/cat-mobile-before@2x.png 2x"
-                  width="280" height="256" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
-              </picture>
-            </div>
+
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)"
+                srcset="images/slider/cat-tablet-before@1x.png 1x, images/slider/cat-tablet-before@2x.png 2x">
+              <img class="slider-cat__image slider-cat__image--before" src="images/slider/cat-mobile-before@1x.png"
+                srcset="images/slider/cat-mobile-before@2x.png 2x" width="280" height="256"
+                alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
+            </picture>
 
 
-            <div class="slider-cat__image slider-cat__image--after">
-              <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)"
-                  srcset="images/slider/cat-tablet-after@1x.png 1x, images/slider/cat-tablet-after@2x.png 2x">
-                <img src="images/slider/cat-mobile-after@1x.png" srcset="images/slider/cat-mobile-after@2x.png 2x"
-                  width="280" height="256" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
-              </picture>
-            </div>
-
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-tablet-after@1x.png 1x, images/slider/cat-tablet-after@2x.png 2x">
+              <img class="slider-cat__image slider-cat__image--after" src="images/slider/cat-mobile-after@1x.png" srcset="images/slider/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
+            </picture>
 
           </div>
           <button class="slider-cat__button button" type="button">
             <span class="visually-hidden">До/после</span>
-            <svg class="slider-cat__tumb-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+            <svg class="slider-cat__tumb-img" aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
               <path d="M16 11L8 20L16 29V11Z" fill="#666666" />
@@ -217,10 +210,8 @@
       </div>
       <div class="location__map-pin">
         <picture>
-          <source width="113" height="106" type="image/png" media="(min-width: 768px)"
-            srcset="images/pictures/map/map-pin-tablet@1x.png 1x, images/pictures/map/map-pin-tablet@2x.png 2x">
-          <img src="images/pictures/map/map-pin-mobile@1x.png" srcset="images/pictures/map/map-pin-mobile@2x.png 2x"
-            alt="маркер карты стилизованный под логотип компании" width="57" height="53">
+          <source width="113" height="106" type="image/png" media="(min-width: 768px)" srcset="images/pictures/map/map-pin-tablet@1x.png 1x, images/pictures/map/map-pin-tablet@2x.png 2x">
+          <img src="images/pictures/map/map-pin-mobile@1x.png" srcset="images/pictures/map/map-pin-mobile@2x.png 2x" alt="маркер карты стилизованный под логотип компании" width="57" height="53">
         </picture>
       </div>
     </section>
@@ -269,13 +260,13 @@
       </ul>
     </section>
     <section class="main-footer__copyright copyright">
-      <h3 class="visually-hidden"> Сайт академии</h3>
+      <h3 class="visually-hidden">Сайт академии</h3>
       <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
       </a>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link link">
+      <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип Академии</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="copyright__logo" aria-hidden="true" width="27" height="34"
+        <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="27" height="34"
           fill="none">
           <path fill="#666"
             d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" />

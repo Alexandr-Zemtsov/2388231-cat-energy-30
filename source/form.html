@@ -124,8 +124,8 @@
               <li class="contact__item">
                 <label class="contact__label">
                   <span class="contact__text">E-mail:*</span>
-                  <input type="email" name="e-mail" class="contact__input" placeholder="kuklachev@gmail.com" required>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="contact__icon" width="21" height="20" fill="none"
+                  <input class="contact__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                  <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
                     aria-hidden="true">
                     <path stroke="#000" stroke-linecap="round" stroke-linejoin="round"
                       d="M1.5 8.5v8h17v-8m-17-5h17v2l-8.5 6-8.5-6v-2Z" />
@@ -136,8 +136,8 @@
                 <label class="contact__label">
                   <span class="contact__text">Телефон:*</span>
 
-                  <input type="tel" name="phone" class="contact__input" placeholder="8 (960) 900-60-90" required>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="contact__icon" width="21" height="20" fill="none"
+                  <input class="contact__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
                     aria-hidden="true">
                     <path stroke="#000" stroke-linecap="round" stroke-linejoin="round"
                       d="M10 10h8.5m0 0L16 7.5m2.5 2.5L16 12.5m-7.5-10v5h-3v5h3v5H6c-1.5 0-2.5-1-2.5-2.5V5c0-1.5 1-2.5 2.5-2.5h2.5Z" />
@@ -156,8 +156,8 @@
               <h3 class="comments__title line-green__title">Комментарий</h3>
             </legend>
 
-            <label class="comments__label container" for="comment">
-              <textarea class="comments__textarea" name="comment" rows="5" id="comment"
+            <label class="comments__label container">
+              <textarea class="comments__textarea" name="comment" rows="5"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
@@ -206,7 +206,7 @@
         <!-- ======FORM-CONTROL====== -->
 
         <div class="form-group form-control container">
-          <button class="form-control__button button-link button">отправить заявку</button>
+          <button class="form-control__button button-link button" type="submit">отправить заявку</button>
           <p class="form-control__required-field">* — Обязательные поля</p>
         </div>
 
@@ -292,13 +292,13 @@
       </ul>
     </section>
     <section class="main-footer__copyright copyright">
-      <h3 class="visually-hidden"> Сайт академии</h3>
+      <h3 class="visually-hidden">Сайт академии</h3>
       <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
       </a>
       <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип Академии</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="copyright__logo" aria-hidden="true" width="27" height="34"
+        <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="27" height="34"
           fill="none">
           <path fill="#666"
             d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" />

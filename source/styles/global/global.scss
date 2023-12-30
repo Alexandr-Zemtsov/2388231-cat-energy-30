@@ -1,1 +1,31 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: $primary-text;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-text;
+  line-height: 18px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}

@@ -1,0 +1,20 @@
+// .comments {
+// }
+// .comments__block-title {
+// }
+// .comments__title {
+// }
+// .comments__label {
+// }
+
+.comments__textarea {
+  color: $color-text;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $color-text;
+  }
+}

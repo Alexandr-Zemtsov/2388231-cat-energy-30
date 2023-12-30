@@ -1,0 +1,30 @@
+// .contact {
+// }
+// .contact__block-title {
+// }
+// .contact__title {
+// }
+// .contact__list {
+// }
+// .contact__item {
+// }
+// .contact__label {
+// }
+// .contact__text {
+// }
+
+.contact__input {
+  color: $color-text;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $color-text;
+  }
+}
+// .contact__icon {
+// }

@@ -2,14 +2,13 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи. Выбор программы.</title>
 </head>
 
@@ -54,7 +53,7 @@
     <section class="form">
       <h2 class="visually-hidden">Анкета для подбора программы</h2>
 
-      <form action="https://echo.htmlacademy.ru/" class="form__wrapper" method="post">
+      <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form-group">
 
           <!-- ======PERSONAL-DATA====== -->
@@ -117,7 +116,7 @@
 
           <fieldset class="form-group__fieldset contact">
             <div class="contact__block-title line-green">
-              <h3 class="line-green__title contact__title">Контактные данные (владельца кота)</h3>
+              <h3 class="line-green__title contact__title title-section">Контактные данные (владельца кота)</h3>
             </div>
 
 
@@ -163,7 +162,10 @@
             </label>
           </fieldset>
         </div>
+
         <div class="form-group">
+          <!-- ======OPTION-PRODUCT====== -->
+
           <fieldset class="form-group__fieldset option-product">
             <div class="line-green option-product__block-title">
               <h3 class="option-product__title line-green__title">Дополнительно</h3>
@@ -204,7 +206,7 @@
         <!-- ======FORM-CONTROL====== -->
 
         <div class="form-group form-control container">
-          <button class="form-control__button button-link">отправить заявку</button>
+          <button class="form-control__button button-link button">отправить заявку</button>
           <p class="form-control__required-field">* — Обязательные поля</p>
         </div>
 

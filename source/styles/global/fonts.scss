@@ -1,1 +1,5 @@
 /* здесь подключите шрифты*/
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+@include font-face("Lato", url("../../fonts/lato/Lato-Regular.woff2") format("woff2"), normal, 400);
+@include font-face("Oswald", url("../../fonts/oswald/oswaldregular.woff2") format("woff2"), normal, 400);

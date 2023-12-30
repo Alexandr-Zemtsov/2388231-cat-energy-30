@@ -1,0 +1,12 @@
+.info-offer {
+  background:
+    linear-gradient(to bottom, rgba($bg-color, 0.85) 0%, rgba($bg-color, 0.85) 100%),
+    url("../../images/pictures/catalog/background/image-cat-mobile@2x.jpg") no-repeat center;
+}
+
+.info-offer__text {
+  color: $color-white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}

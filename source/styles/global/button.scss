@@ -1,0 +1,19 @@
+/* stylelint-disable length-zero-no-unit */
+.button {
+  cursor: pointer;
+}
+
+.button-link {
+  background-color: $bg-color;
+  color: $color-white;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+}

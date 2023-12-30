@@ -1,0 +1,53 @@
+// .card-product {
+// }
+// .card-product__link-image {
+// }
+.card-product__title {
+  color: $dark-grey;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card-product__content {
+  font-size: 12px;
+  line-height: 16px;
+}
+// .card-product__item-row {
+// }
+// .card-product__property {
+// }
+// .card-product__value {
+// }
+// .card-product__button {
+// }
+
+.card-product__title-more {
+  color: $dark-grey-2;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card-product__text-more {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card-product__button-more {
+  background-color: $light-grey-3;
+  color: $color-text;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

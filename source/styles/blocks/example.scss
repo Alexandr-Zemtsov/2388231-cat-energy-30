@@ -1,0 +1,34 @@
+// .example {
+// }
+// .example__title {
+// }
+// .example__inner {
+// }
+// .example__text {
+// }
+// .example__list {
+// }
+.example__value {
+  color: $color-black;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__description {
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__expenses {
+  color: $color-black;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+// .example__slider-cat {
+// }

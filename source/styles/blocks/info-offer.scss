@@ -1,7 +1,22 @@
+/* stylelint-disable length-zero-no-unit */
 .info-offer {
+  position: relative;
   background:
     linear-gradient(to bottom, rgba($bg-color, 0.85) 0%, rgba($bg-color, 0.85) 100%),
     url("../../images/pictures/catalog/background/image-cat-mobile@2x.jpg") no-repeat center;
+  padding: 186px 0px 43px 0px;
+}
+
+.info-offer::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("../../images/icons/stack.svg#icon_gift-mobile") no-repeat;
+  width: 78px;
+  height: 80px;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .info-offer__text {

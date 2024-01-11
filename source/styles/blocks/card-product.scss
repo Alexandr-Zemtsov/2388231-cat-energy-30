@@ -1,5 +1,7 @@
 // .card-product {
+
 // }
+
 // .card-product__link-image {
 // }
 .card-product__title {
@@ -16,6 +18,12 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+.card-product--more {
+  background: url("../../images/icons/stack.svg#plus-mobile") no-repeat center;
+  height: 200px;
+}
+
 // .card-product__item-row {
 // }
 // .card-product__property {
@@ -25,7 +33,7 @@
 // .card-product__button {
 // }
 
-.card-product__title-more {
+.card-product__title--more {
   color: $dark-grey-2;
   text-align: center;
   font-family: $secondary-font;
@@ -42,7 +50,7 @@
   line-height: 16px;
 }
 
-.card-product__button-more {
+.card-product__button--more {
   background-color: $light-grey-3;
   color: $color-text;
   text-align: center;

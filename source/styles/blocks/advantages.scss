@@ -4,18 +4,44 @@
 // .advantages__title {
 // }
 
-// .advantages__list {
-// }
+.advantages__list {
+  display: grid;
+  gap: 22px;
+}
 
-// .advantages__item {
-// }
-// .advantages__item--leaf {
-// }
+.advantages__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+}
+
+.advantages__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  margin-top: -2px;
+  background-color: $bg-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+
+.advantages__item--leaf::before {
+  background-image: url("../../images/icons/stack.svg#icon_leaf");
+}
+
+.advantages__item--hotwater::before {
+  background-image: url("../../images/icons/stack.svg#icon_hotwater");
+}
+
+.advantages__item--eat::before {
+  background-image: url("../../images/icons/stack.svg#icon_eat");
+}
+
+.advantages__item--time::before {
+  background-image: url("../../images/icons/stack.svg#icon_time");
+}
+
+/* stylelint-disable-next-line no-missing-end-of-source-newline */
 // .advantages__item-text {
-// }
-// .advantages__item--hotwater {
-// }
-// .advantages__item--eat {
-// }
-// .advantages__item--time {
 // }

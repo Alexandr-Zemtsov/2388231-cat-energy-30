@@ -10,7 +10,25 @@
 // }
 // .option-product__label {
 // }
-// .option-product__input {
-// }
+.option-product__input {
+  position: relative;
+  border: 1px solid $input-border;
+  height: 26px;
+  width: 26px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.option-product__input:checked::before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 18px;
+  background: url("../../images/icons/stack.svg#icon-tick-mobile") no-repeat center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
 // .option-product__text {
 // }

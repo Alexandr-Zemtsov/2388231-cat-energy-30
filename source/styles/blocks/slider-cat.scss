@@ -1,15 +1,69 @@
-// .slider-cat {
-// }
-// .slider-cat__inner {
-// }
-// .slider-cat__image {
-// }
-// .slider-cat__image--before {
-// }
-// .slider-cat__image--after {
-// }
-// .slider-cat__button {
-// }
+.slider-cat {
+  position: relative;
+  width: 280px;
+}
 
+.slider-cat__inner {
+  display: flex;
+  width: auto;
+  min-height: 256px;
+  position: relative;
+}
+
+.slider-cat__image {
+  height: 100%;
+  width: 140px;
+  object-fit: cover;
+}
+
+.slider-cat__image--before {
+  object-position: left;
+}
+
+.slider-cat__image--after {
+  object-position: right;
+}
+
+.slider-cat__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  color: $color-grey;
+}
+
+.slider-cat__button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: $color-grey;
+}
+
+.slider-cat__button:hover {
+  color: $bg-color;
+}
+
+.slider-cat__button:hover::after {
+  background-color: $bg-color;
+}
+
+.slider-cat__button:active {
+  color: rgba($bg-color-2, 0.6);
+}
+
+.slider-cat__button:active::after {
+  background-color: rgba($bg-color-2, 0.6);
+}
 // .slider-cat__tumb-img {
 // }

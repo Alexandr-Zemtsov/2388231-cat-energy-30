@@ -1,19 +1,30 @@
+/* stylelint-disable length-zero-no-unit */
 // .contact {
 // }
 // .contact__block-title {
 // }
 // .contact__title {
 // }
-// .contact__list {
-// }
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0px 20px 0px 20px;
+}
 // .contact__item {
 // }
-// .contact__label {
-// }
+.contact__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  justify-content: start;
+}
 // .contact__text {
 // }
 
 .contact__input {
+  flex-grow: 1;
   color: $color-text;
   font-family: $secondary-font;
   font-size: 16px;
@@ -21,10 +32,53 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
-  &::placeholder {
-    color: $color-text;
-  }
+  padding: 14px 35px 13px 15px;
+  border: 1px solid $light-grey-4;
 }
-// .contact__icon {
-// }
+
+.contact__input::placeholder {
+  color: $color-text;
+}
+
+.contact__label::after {
+  content: "";
+  visibility: visible;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  right: 15.5px;
+  background-color: $dark-grey;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.contact__label--email::after {
+  mask-image: url("../../images/icons/stack.svg#icon-email");
+}
+
+.contact__label--tel::after {
+  mask-image: url("../../images/icons/stack.svg#icon-phone");
+}
+
+.contact__input:hover {
+  border-color: $input-border;
+}
+
+.contact__input:focus {
+  outline: none;
+  border: 2px solid $color-focus;
+}
+
+.contact__input:disabled {
+  border: 2px solid $color-disable;
+}
+
+.contact__label:has(.contact__input:focus)::after {
+  background-color: $bg-color;
+}
+
+.contact__label:has(.contact__input:disabled)::after {
+  background-color: $color-disable;
+}

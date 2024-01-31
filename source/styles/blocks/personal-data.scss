@@ -1,12 +1,65 @@
-// .personal-data {
-// }
-// .personal-data__list {
-// }
-// .personal-data__item {
-// }
+.personal-data {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.personal-data__list {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  padding-bottom: 24px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.personal-data__list::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: $light-grey-2;
+  box-shadow: 100vw 0 0 $light-grey-2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.personal-data__item {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
 // .personal-data__label {
+
 // }
+
 .personal-data__input {
+  flex-grow: 1;
+  flex-shrink: 0;
+  color: $color-text;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid $light-grey-4;
+  padding: 14px 15px 13px 15px;
+}
+
+.personal-data__input::placeholder {
   color: $color-text;
   font-family: $secondary-font;
   font-size: 16px;
@@ -15,9 +68,25 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  &::placeholder {
-    color: $color-text;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
   }
 }
-// .personal-data__text {
-// }
+
+.personal-data__input:hover {
+  border-color: $input-border;
+}
+
+.personal-data__input:focus-visible {
+  border-color: transparent;
+  outline: 2px solid $color-focus;
+}
+
+.personal-data__input--error {
+  outline: 2px solid $color-error;
+}
+
+.personal-data__input--error:hover {
+  border-color: transparent;
+}

@@ -1,12 +1,36 @@
-// .form-control {
-// }
-// .form-control__button {
-// }
+.form__button-wrapper {
+  padding-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 21px;
 
-.form-control__required-field {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+    grid-template-columns: 50% 1fr;
+    align-items: center;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 79px;
+    gap: 80px;
+  }
+}
+
+.form__button-control {
+  border: none;
+}
+
+.form__required-field {
   color: $color-black;
   text-align: center;
   font-family: $primary-text;
   line-height: 16px;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+  }
 }

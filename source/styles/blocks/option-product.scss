@@ -1,22 +1,65 @@
-// .option-product {
-// }
-// .option-product__block-title {
-// }
-// .option-product__title {
-// }
-// .option-product__list {
-// }
-// .option-product__item {
-// }
-// .option-product__label {
-// }
+.option-product {
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
+}
+
+.option-product__title {
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
+  }
+}
+
+.option-product__list {
+  display: grid;
+  row-gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.option-product__item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+}
+
+.option-product__label {
+  order: 2;
+  cursor: pointer;
+}
+
 .option-product__input {
+  order: 1;
   position: relative;
   border: 1px solid $input-border;
   height: 26px;
   width: 26px;
   appearance: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .option-product__input:checked::before {
@@ -29,6 +72,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    height: 26px;
+    width: 26px;
+  }
 }
-// .option-product__text {
-// }

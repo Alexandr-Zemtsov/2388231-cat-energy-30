@@ -1,11 +1,36 @@
-// .main-form {
-// }
+.main-form {
+  padding-top: 27px;
 
-// .main-form__title {
-// }
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+  }
+}
+
+.main-form__title {
+  padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 55px;
+  }
+}
 
 .main-form__description {
   color: $color-black;
   font-family: $secondary-font;
   text-transform: uppercase;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 66px;
+  }
 }

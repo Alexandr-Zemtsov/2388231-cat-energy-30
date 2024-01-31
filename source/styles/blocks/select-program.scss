@@ -1,12 +1,88 @@
-// .select-program {
-// }
-// .select-program__list {
-// }
-// .select-program__item {
-// }
-// .select-program__label {
-// }
-// .select-program__input {
-// }
-// .select-program__text {
-// }
+.select-program {
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.select-program__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px 27px;
+    border: 1px solid $light-grey-4;
+  }
+}
+
+.select-program__list::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: $light-grey-2;
+  box-shadow: 100vw 0 0 $light-grey-2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.select-program__item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+}
+
+.select-program__label {
+  order: 2;
+  cursor: pointer;
+}
+
+.select-program__input {
+  order: 1;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid $input-border;
+  cursor: pointer;
+}
+
+.select-program__input:hover {
+  border-color: $input-hover;
+}
+
+.select-program__input:disabled,
+.select-program__item:has(.select-program__input:disabled) .select-program__label {
+  opacity: 0.3;
+}
+
+.select-program__input:checked::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: $bg-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  border-radius: 50%;
+}

@@ -1,6 +1,11 @@
 .slider-cat {
+  margin: 0 auto;
   position: relative;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
 }
 
 .slider-cat__inner {
@@ -8,11 +13,16 @@
   width: auto;
   min-height: 256px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 512px;
+  }
 }
+
 
 .slider-cat__image {
   height: 100%;
-  width: 140px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -33,6 +43,7 @@
   height: 40px;
   border-radius: 50%;
   border: 0;
+  z-index: 1;
   color: $color-grey;
 }
 
@@ -45,9 +56,13 @@
   transform: translate(-50%, -50%);
   display: block;
   width: 4px;
-  height: 256px;
+  min-height: 256px;
   border-radius: 2px;
   background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    min-height: 512px;
+  }
 }
 
 .slider-cat__button:hover {

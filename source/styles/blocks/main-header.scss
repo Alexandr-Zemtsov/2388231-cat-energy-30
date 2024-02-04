@@ -123,3 +123,35 @@
 .main-header__logo:has(.main-header__logo-text:active) .main-header__logo-image {
   opacity: 0.6;
 }
+
+.main-header__toggle-menu {
+  transition: all 0.1s linear;
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  right: 20px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle-menu--opens {
+  width: 24px;
+  height: 25px;
+  background: url("../../images/icons/stack.svg#icon-open-menu") no-repeat center;
+}
+
+.main-header__toggle-menu--closes {
+  width: 20px;
+  height: 23px;
+  background: url("../../images/icons/stack.svg#icon-close-menu") no-repeat center;
+}
+
+
+.main-header__toggle-menu--nojs {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

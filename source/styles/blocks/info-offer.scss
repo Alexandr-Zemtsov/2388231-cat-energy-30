@@ -28,17 +28,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: url("../../images/pictures/catalog/background/image-cat-mobile@2x.jpg") no-repeat center;
+  background: url("../../images/pictures/catalog/background/image-cat-mobile@2x.webp") no-repeat center;
   background-size: cover;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    background: url("../../images/pictures/catalog/background/image-cat-tablet@2x.jpg") no-repeat center;
+    background: url("../../images/pictures/catalog/background/image-cat-tablet@2x.webp") no-repeat center;
     background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../images/pictures/catalog/background/image-cat-desktop@2x.jpg") no-repeat center;
+    background: url("../../images/pictures/catalog/background/image-cat-desktop@2x.webp") no-repeat center;
     background-size: cover;
   }
 }

@@ -123,8 +123,10 @@
 }
 
 .card-product__item-row {
-  display: flex;
-  justify-content: space-between;
+  margin-left: -1px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-right: -1px;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
@@ -135,7 +137,10 @@
 
 .card-product__item-row:last-child {
   margin-bottom: 0;
-  padding-bottom: 9px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
+  }
 }
 
 .card-product__button {

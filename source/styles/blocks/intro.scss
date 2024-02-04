@@ -26,7 +26,7 @@
   right: 0;
   top: 0;
   height: 302px;
-  background: url("../../images/pictures/index/background/index-background-mobile@2x.jpg") no-repeat center;
+  background: url("../../images/pictures/index/background/index-background-mobile@2x.webp") no-repeat center;
   background-size: contain;
 
   @media (min-width: $tablet-width) {
@@ -123,7 +123,7 @@
 
 .intro__link {
   @media (min-width: $tablet-width) {
-    margin-left: 91px;
+    margin-left: 90px;
     max-width: 244px;
     font-size: 20px;
     line-height: 26px;

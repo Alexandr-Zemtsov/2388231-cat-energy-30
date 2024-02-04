@@ -53,7 +53,11 @@
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid $light-grey-4;
-  padding: 17px 19px 13px 19px;
+  padding: 14px 15px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 19px 13px 19px;
+  }
 }
 
 .personal-data__input::placeholder {

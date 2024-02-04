@@ -9,6 +9,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -70,6 +72,12 @@
         </div>
         <div class="intro__image">
           <picture>
+            <source width="552" height="499" type="image/webp" media="(min-width: 1440px)"
+              srcset="images/pictures/index/intro/index-can-desktop@1x.webp 1x, images/pictures/index/intro/index-can-desktop@2x.webp 2x">
+            <source width="709" height="609" type="image/webp" media="(min-width: 768px)"
+              srcset="images/pictures/index/intro/index-can-tablet@1x.webp 1x, images/pictures/index/intro/index-can-tablet@2x.webp 2x">
+            <source width="280" height="270" type="image/webp"
+              srcset="images/pictures/index/intro/index-can-mobile@1x.webp 1x, images/pictures/index/intro/index-can-mobile@2x.webp 2x">
             <source width="552" height="499" type="image/png" media="(min-width: 1440px)"
               srcset="images/pictures/index/intro/index-can-desktop@1x.png 1x, images/pictures/index/intro/index-can-desktop@2x.png 2x">
             <source width="709" height="609" type="image/png" media="(min-width: 768px)"
@@ -148,7 +156,7 @@
             Energy
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
             спит
-            по 16 часов в день. </p>
+            по 16 часов в день.</p>
           <div class="example__data">
             <dl class="example__list  list">
               <div class="example__item">
@@ -190,7 +198,7 @@
             </picture>
             <button class="slider-cat__button button" type="button">
               <span class="visually-hidden">До/после</span>
-              <svg class="slider-cat__tumb-img" width="40" height="40" focusable="false" aria-hidden="true">
+              <svg width="40" height="40" focusable="false" aria-hidden="true">
                 <use href="../../images/icons/stack.svg#icon-thumb-slider"></use>
               </svg>
             </button>
@@ -224,7 +232,7 @@
 
         <iframe class="location__iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6178444226712!2d30.323053985313315!3d59.93873455200729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1706555826755!5m2!1sru!2sru"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          width="600" height="450" style="border:0;" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <div class="location__map-pin">
@@ -255,18 +263,19 @@
       <section class="main-footer__social social">
         <h3 class="visually-hidden">Мы в соцсетях</h3>
         <ul class=" social__list list">
-          <li class="social__list-iitem">
-            <a class="social__list-link social__list-link--vk" href="#">
+          <li class="social__list-item">
+            <a class="social__list-link social__list-link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="social__list-iitem">
-            <a class="social__list-link social__list-link--youtub" href="#">
+          <li class="social__list-item">
+            <a class="social__list-link social__list-link--youtub"
+              href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
-          <li class="social__list-iitem">
-            <a class="social__list-link social__list-link--telegram" href="#">
+          <li class="social__list-item">
+            <a class="social__list-link social__list-link--telegram" href="https://t.me/s/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>

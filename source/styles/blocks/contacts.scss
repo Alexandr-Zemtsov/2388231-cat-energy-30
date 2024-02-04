@@ -11,36 +11,35 @@
 }
 
 .contact__title {
-  padding-bottom: 35px;
-  width: calc(100% - 90px);
+  padding-bottom: 36px;
+  width: calc(100% - 93px);
 
   @media (min-width: $tablet-width) {
     width: fit-content;
-    padding-bottom: 76px;
+    padding-bottom: 75px;
   }
 }
 
 .contact__list {
   display: grid;
-  gap: 14px;
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    gap: 21px;
+  }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 50% 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
   }
 }
-// .contact__item {
-// }
+
 .contact__label {
   position: relative;
   display: flex;
   align-items: center;
   gap: 13px;
 }
-
-// .contact__text {
-
-// }
 
 .contact__input {
   flex-shrink: 0;
@@ -54,6 +53,10 @@
   text-transform: uppercase;
   padding: 14px 35px 13px 15px;
   border: 1px solid $light-grey-4;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 35px 13px 20px;
+  }
 }
 
 .contact__input::placeholder {
@@ -79,10 +82,14 @@
   position: absolute;
   width: 21px;
   height: 20px;
-  right: 15.5px;
+  right: 12.5px;
   background-color: $dark-grey;
   mask-position: center;
   mask-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    right: 15.5px;
+  }
 }
 
 .contact__label--email::after {

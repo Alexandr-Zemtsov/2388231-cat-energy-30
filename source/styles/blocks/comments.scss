@@ -2,28 +2,25 @@
   padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 65px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 70px;
+    padding-bottom: 67px;
   }
 }
 
 .comments__title {
-  padding-bottom: 32px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 87px;
+    padding-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 78px;
+    padding-bottom: 75px;
   }
 }
-
-// .comments__label {
-// }
 
 .comments__textarea {
   color: $color-text;
@@ -36,6 +33,8 @@
   width: 100%;
   height: 150px;
   overflow: scroll-y;
+  resize: none;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

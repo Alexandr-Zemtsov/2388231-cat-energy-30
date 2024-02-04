@@ -9,6 +9,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Кэт энерджи. Выбор программы.</title>
 </head>
 
@@ -43,15 +45,15 @@
       </button>
       <nav class="main-nav">
 
-        <ul class="main-nav__list main-nav__list--closed list main-nav__list--nojs">
+        <ul class="main-nav__list main-nav__list--form main-nav__list--closed list main-nav__list--nojs">
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="index.html">главная</a>
+            <a class="main-nav__link main-nav__link--form link" href="index.html">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="catalog.html">каталог продукции</a>
+            <a class="main-nav__link main-nav__link--form link" href="catalog.html">каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--support link" href="#">подбор программы</a>
+            <a class="main-nav__link main-nav__link--form main-nav__link--support link" href="#">подбор программы</a>
           </li>
 
         </ul>
@@ -243,18 +245,18 @@
       <section class="main-footer__social social">
         <h3 class="visually-hidden">Мы в соцсетях</h3>
         <ul class=" social__list list">
-          <li class="social__list-iitem">
-            <a class="social__list-link social__list-link--vk" href="#">
+          <li class="social__list-item">
+            <a class="social__list-link social__list-link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="social__list-iitem">
-            <a class="social__list-link social__list-link--youtub" href="#">
+          <li class="social__list-item">
+            <a class="social__list-link social__list-link--youtub" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
-          <li class="social__list-iitem">
-            <a class="social__list-link social__list-link--telegram" href="#">
+          <li class="social__list-item">
+            <a class="social__list-link social__list-link--telegram" href="https://t.me/s/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>

@@ -1,5 +1,5 @@
 .select-program {
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 65px;
@@ -63,6 +63,11 @@
   border-radius: 50%;
   border: 1px solid $input-border;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .select-program__input:hover {
@@ -85,4 +90,9 @@
   transform: translate(-50%, -50%);
   z-index: 5;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }

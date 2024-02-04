@@ -1,12 +1,29 @@
 .main-catalog__title {
+  position: relative;
   padding-top: 27px;
   padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 67px;
+    padding-top: 61px;
+    padding-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 77px;
+    padding-top: 71px;
+  }
+}
+
+.main-catalog__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: #ebebeb;
+  box-shadow: 100vw 0 0 #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

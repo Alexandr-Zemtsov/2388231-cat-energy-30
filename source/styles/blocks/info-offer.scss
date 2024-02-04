@@ -1,8 +1,8 @@
-/* stylelint-disable length-zero-no-unit */
 .info-offer {
   position: relative;
   background-color: rgba($bg-color, 0.85);
-  padding: 59px 0px 43px 0px;
+  padding-top: 59px;
+  padding-bottom: 43px;
   min-height: 290px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
-    padding: 70px 125px 70px 77px;
+    padding: 56px 125px 57px 77px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -55,6 +55,11 @@
     width: 80px;
     height: 82px;
     margin: 0;
+    margin-top: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -64,6 +69,7 @@
   font-size: 16px;
   line-height: 20px;
   width: 161px;
+  margin-left: -2px;
 
   @media (min-width: $tablet-width) {
     text-align: left;

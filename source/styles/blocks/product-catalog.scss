@@ -1,20 +1,17 @@
-// .product-catalog {
-// }
-
 .product-catalog__list {
   display: grid;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 88px;
-    margin-top: 94px;
+    row-gap: 141px;
+    margin-top: 88px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    row-gap: 143px;
+    row-gap: 146px;
   }
 }
 
@@ -37,5 +34,8 @@
   }
 }
 
-// .product-catalog__block {
-// }
+.product-catalog__list-item:nth-of-type(4n) {
+  @media (min-width: $desktop-width) {
+    padding-right: 2px;
+  }
+}

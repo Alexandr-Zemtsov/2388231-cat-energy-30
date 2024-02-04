@@ -1,5 +1,5 @@
 .card-product {
-  padding: 20px 0 25px 0;
+  padding: 21px 0 25px 0;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -25,7 +25,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 245px;
     padding: 10px 38px 40px 38px;
+    max-width: 100%;
   }
 }
 
@@ -33,17 +35,27 @@
   grid-area: image;
   display: flex;
   justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
-    align-items: flex-end;
+    align-items: center;
     min-height: 210px;
     margin-top: -80px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
+}
+
+.card-product__link-image:hover {
+  opacity: 0.8;
+}
+
+.card-product__link-image:active {
+  opacity: 0.6;
 }
 
 .card-product__title {
@@ -64,23 +76,49 @@
     font-size: 20px;
     line-height: 24px;
     width: 135px;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
+    margin-top: -1px;
+    margin-left: -2px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
+}
+
+.card-product__title-link {
+  color: $dark-grey;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+.card-product__title-link:hover {
+  opacity: 0.6;
+}
+
+.card-product__title-link:active {
+  opacity: 0.3;
 }
 
 .card-product__content {
   font-size: 12px;
   line-height: 16px;
   grid-area: table;
+  width: 140px;
+  margin-top: -3px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 32px;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -91,13 +129,15 @@
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
-// .card-product__property {
-// }
-// .card-product__value {
-// }
+.card-product__item-row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 9px;
+}
+
 .card-product__button {
   width: 100%;
   grid-area: button;
@@ -113,7 +153,6 @@
   gap: 0;
   height: 100%;
 
-
   @media (min-width: $tablet-width) {
     padding: 50px 37px 40px;
     background-position: center 50px;
@@ -121,6 +160,11 @@
     border: 2px solid #f2f2f2;
     justify-content: end;
     margin-top: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position-y: 46px;
+    padding-left: 36px;
   }
 }
 
@@ -142,12 +186,17 @@
     line-height: 24px;
     margin-bottom: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 97px;
+    margin-bottom: 24px;
+  }
 }
 
 .card-product__text-more {
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     text-align: center;

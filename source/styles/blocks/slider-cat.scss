@@ -8,6 +8,24 @@
   }
 }
 
+.slider-cat::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    top: 152px;
+    right: 0;
+    height: 90%;
+    background-color: #eaeaea;
+    box-shadow: 100vw 0 0#eaeaea;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .slider-cat__inner {
   display: flex;
   width: auto;

@@ -17,12 +17,12 @@
 }
 
 .example::after {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    top: 205px;
     content: "";
     position: absolute;
     z-index: -1;
     width: 100%;
-    top: 205px;
     height: 100%;
     background-color: $bg-example;
   }

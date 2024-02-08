@@ -41,11 +41,17 @@
 }
 
 .main-footer__logo {
-  color: $dark-grey-2;
+  width: 128px;
+  height: 24px;
+  background-color: $dark-grey-2;
   display: inline-block;
   text-align: center;
   padding-bottom: 14px;
   outline: none;
+  mask-image: url("../../images/icons/stack.svg#logo-catenergy-footer");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  transition: all 0.1s linear;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -56,9 +62,9 @@
 
 .main-footer__logo:hover,
 .main-footer__logo:focus-visible {
-  color: #3e3e3e;
+  background-color: #3e3e3e;
 }
 
 .main-footer__logo:active {
-  color: #6b6b6b;
+  background-color: #6b6b6b;
 }

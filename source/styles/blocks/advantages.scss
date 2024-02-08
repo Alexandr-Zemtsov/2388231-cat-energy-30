@@ -128,13 +128,6 @@
 .advantages__item-text {
   position: relative;
   z-index: 2;
-  background-color: #ffffff;
-  font-family: $primary-text;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  color: $color-text;
-  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
